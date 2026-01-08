@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating form</title>
+</head>
+<body>
+    <form action="/submit">
+    <label for="name">Name:</label>
+    <input type="text" required name="name" id="name" />
+    <br><br>
+
+    <p>Rating:</p>
+
+    <input type="radio" id="star1" name="rating" value="1 star">
+    <label for="star1">1 Star</label>
+
+    <input type="radio" id="star2" name="rating" value="2 star">
+    <label for="star2">2 Stars</label>
+
+    <input type="radio" id="star3" name="rating" value="3 star">
+    <label for="star3">3 Stars</label>
+
+    <label for="comment">Comment: </label>
+    <textarea name="comment" id="comment"></textarea>
+
+    <label for="gender" >Gender: </label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected>Default</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+
+    <label for="country">Countries you like: </label>
+    <input type="checkbox"  name="country" value="India" id="india"/><label for="india">India</label>
+    <input type="checkbox" name="country" value="China" id="china"/><label for="china">Chine</label>
+    <input type="checkbox" name="country" value="Russia" id="russia"/><label for="russia">Russia</label>
+    
+    <br/>
+
+    <input name="age" placholder="Age" type="number" max="89" min="3"> 
+
+    <input type="submit" value="Submit button">
+
+</form>
+
+</body>
+</html>
